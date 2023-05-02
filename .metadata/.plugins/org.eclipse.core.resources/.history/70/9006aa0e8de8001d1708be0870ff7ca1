@@ -1,0 +1,26 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Chapter01Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(Chapter01Application.class, args);
+	}
+
+}
+
+
+/*
+ * - 스프링 부트로 만든 애플리케이션은 일반 자바 애플리케이션으로 실행할 수도 있고
+ * - 웹 애플리케이션으로 실행할 수도 있다.
+ * - 기본적으로 작성된 메인 클래스를 실행하면 웹 애플리케이션으로 실행된다.
+ * - 내장 Tomcat이 구동되고 브라우저에서 전송한 요청을 처리할 수 있다.
+ * - 하지만 코드를 수정하여 일반 자바 애플리케이션으로 실행하면 내장 Tomcat은 구동되지 않는다.
+ * 
+ * 
+ */
+
+\

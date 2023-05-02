@@ -1,0 +1,10 @@
+package com.example.controller;
+
+public class HelloController {
+
+	public HelloController() {
+		System.out.println("HelloController 기본 생성자");
+		
+		
+	}
+}
