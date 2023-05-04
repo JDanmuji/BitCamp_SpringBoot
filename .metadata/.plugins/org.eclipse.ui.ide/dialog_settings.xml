@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<list key="installedFeatures">
 		<item value="org.eclipse.buildship:3.1.6.v20220511-1359"/>
+		<item value="org.eclipse.eclemma.feature:3.1.6.202206011447"/>
 		<item value="org.eclipse.egit.gitflow.feature:6.5.0.202303070854-r"/>
 		<item value="org.eclipse.egit:6.5.0.202303070854-r"/>
 		<item value="org.eclipse.emf.common:2.29.0.v20230223-0922"/>
@@ -15,6 +16,7 @@
 		<item value="org.eclipse.jgit.ssh.apache:6.5.0.202303070854-r"/>
 		<item value="org.eclipse.jgit:6.5.0.202303070854-r"/>
 		<item value="org.eclipse.jst.common.fproj.enablement.jdt:3.29.0.v202301170743"/>
+		<item value="org.eclipse.jst.enterprise_ui.feature:3.29.0.v202302070745"/>
 		<item value="org.eclipse.justj.openjdk.hotspot.jre.full:17.0.6.v20230204-1729"/>
 		<item value="org.eclipse.m2e.feature:2.2.1.20230307-1553"/>
 		<item value="org.eclipse.m2e.logback.feature:2.1.1.20230106-1511"/>
@@ -29,12 +31,15 @@
 		<item value="org.eclipse.tm.terminal.view.feature:11.1.0.202212091724"/>
 		<item value="org.eclipse.userstorage:1.2.0.v20210517-0327"/>
 		<item value="org.eclipse.wst.common.fproj:3.7.4.v202303031844"/>
+		<item value="org.eclipse.wst.json_ui.feature:1.1.10.v202211200019"/>
+		<item value="org.eclipse.wst.web_ui.feature:3.29.0.v202301190221"/>
+		<item value="org.eclipse.wst.xml_ui.feature:3.29.0.v202212250111"/>
 		<item value="org.jboss.tools.m2e.wro4j.feature:1.2.1.202301111328"/>
 		<item value="org.sonatype.m2e.egit.feature:0.17.0.202209271423"/>
 	</list>
 	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/HelloGradle/src/main/java/com/example/demo/HelloGradleApplication.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Chapter01/src/main/resources/application.properties&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/HelloGradle/src/main/java/com/example/demo/HelloGradleApplication.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Chapter01/src/main/resources/application.properties&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Chapter01Gradle/src/main/resources/application.properties&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Chapter02_MySQL/src/main/resources/application.properties&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Chapter02_MySQL/src/test/java/com/example/demo/Chapter02MySqlApplicationTests.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Chapter02_MySQL/src/main/java/com/example/demo/Chapter02MySqlApplication.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Chapter02_MySQL/src/main/java/person/controller/PersonController.java&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;infoNode path=&quot;/Chapter02_MySQL/src/main/webapp/WEB-INF/person/writeForm.jsp&quot; type=&quot;1&quot;/&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
 		<item key="ShowDerived" value="false"/>
 		<item key="FilterByLocation" value="false"/>
 		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
@@ -45,5 +50,11 @@
 			<item key="DIALOG_Y_ORIGIN" value="195"/>
 			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 		</section>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="500"/>
+		<item key="DIALOG_HEIGHT" value="389"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 </section>
