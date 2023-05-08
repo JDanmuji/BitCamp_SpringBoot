@@ -176,6 +176,9 @@ $(document).ready(function(){
             dataType : "json",
         	success : function(data) {
         		
+        		
+        		
+        		
         	/* 	$.each(data.list, function(index, items){
         			
         			$('<tr/>').append($('<td/>', {
@@ -189,26 +192,23 @@ $(document).ready(function(){
         				text : items.photo		      						
         			})).appendTo($('#userListTable'));
         			
-				}); */
+				});
+				 */
 				
-				console.log(data.list);
-				console.log(data.list);
-				
-				for (var i = 0; i <data.list.length; i++) {
+			 for (var i = 0; i <data.list.length; i++) {
+					console.log(data.list[i].photo);
 					
 					var html = `<tr>
 								<td align="center">
-									<img src="/storage/${data.list.photo}" width="100" height="100">
+									<img src="/storage/${data.list[i].photo}" width="100" height="100">
 								</td>
-								<td align="center">${data[i].age}</td>
-								<td align="center">${data[i].photo}</td>
-								</tr>`;
+								<td align="center">${data.list[i].age}</td>
+								<td align="center">${data.list[i].name}</td>
+								</tr>`
 					
-					
-								console.log(html);
 								$('#userListTable').append(html);
-				}
-				
+			 }
+				 
 				$('#userListPaingDiv').html(data.pagingHTML);
 
         	},

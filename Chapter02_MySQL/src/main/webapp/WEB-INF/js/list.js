@@ -1,7 +1,7 @@
 //등록
 $(document).ready(function(){
 
-	console.log($('#pg').val());
+	
 
         $.ajax({
         	type: 'post',
@@ -11,7 +11,9 @@ $(document).ready(function(){
         	},
             dataType : "json",
         	success : function(data) {
-        		console.log(JSON.stringify(data));
+        		
+        		
+        		console.log(data.list);
         		
         		$.each(data.list, function(index, items){
         			

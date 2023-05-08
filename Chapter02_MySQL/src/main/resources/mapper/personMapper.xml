@@ -4,13 +4,13 @@
  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="personSQL">
 	
-	<insert id="write" parameterType="person.bean.PersonDTO">
+	<insert id="write" parameterType="person">
 		insert into person(name, age, photo) values(#{name}, #{age}, #{photo})	
 	</insert>
 	
-	<select id="getUserList" parameterType="java.util.Map" resultType="person.bean.PersonDTO">
+	<select id="getUserList" parameterType="java.util.Map" resultType="person">
 		<![CDATA[
-		SELECT T.name, T.age, T.photo FROM 
+		SELECT T.seq, T.name, T.age, T.photo FROM 
 		(SELECT TT.* FROM
 		(SELECT * FROM person) TT 
 		) T WHERE T.SEQ >= #{startNum} AND T.SEQ <= #{endNum}
