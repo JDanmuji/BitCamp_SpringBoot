@@ -34,7 +34,7 @@ $(document).ready(function(){
         	data: $('#writeForm').serialize(), //문자열 'name=홍길동&id=...'
         	success : function() {
         		alert("회원가입을 축하드립니다!");
-        		location.href="/";
+        		location.href="/user/list";
         	},
         	error : function(err) {
         		console.log(err);

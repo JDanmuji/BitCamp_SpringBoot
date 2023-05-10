@@ -3,6 +3,7 @@ package user.bean;
 import java.sql.Timestamp;
 import java.util.Date;
 
+import org.hibernate.annotations.DynamicUpdate;
 import org.hibernate.annotations.GenericGenerator;
 
 import jakarta.persistence.Column;
@@ -18,6 +19,7 @@ import lombok.Data;
 @Entity //해당 class는 Entity 이다.
 @Table(name="usertable")
 @Data
+@DynamicUpdate
 public class UserDTO {
 	
 	@Column(name="name", nullable = false, length = 30)
@@ -29,4 +31,12 @@ public class UserDTO {
 	
 	@Column(name="pwd", nullable = false, length = 50)
 	private String pwd;
+	
+	public void changeName(String name){
+		this.name = name;
+	}
+	
+	public void changePwd(String pwd){
+		this.pwd = pwd;
+	}
 }

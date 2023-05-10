@@ -8,6 +8,7 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import jakarta.transaction.Transactional;
 import user.bean.UserDTO;
 import user.dao.UserDAO;
 
@@ -39,6 +40,41 @@ public class UserServiceImpl implements UserService {
 		}
 		
 		return result; 
+	}
+
+	@Override
+	public List<UserDTO> search(Map<String, String> map) {
+		
+		String searchOption = map.get("searchOption");
+		String keyword = map.get("keyword");
+		
+		if (searchOption.equals("name")) {
+			return userDAO.findByNameContaining(keyword);
+		} else {
+			return userDAO.findByNameContaining(keyword);
+		}
+		
+	}
+
+	@Override
+	public Optional<UserDTO> getUser(String searchId) {
+		Optional<UserDTO> userDTO = userDAO.findById(searchId); //id가 없으면 Optional.empty 출력된다.
+		return userDTO;
+	}
+
+	@Transactional
+	@Override
+	public void update(UserDTO userDTO) {
+		String id = userDTO.getId();
+		Optional<UserDTO> datalist = userDAO.findById(id);
+		
+		datalist.get().changeName(userDTO.getName());
+		datalist.get().changePwd(userDTO.getPwd());
+	}
+
+	@Override
+	public void delete(UserDTO userDTO) {
+		 userDAO.deleteById(userDTO.getId());
 	}
 
 }
