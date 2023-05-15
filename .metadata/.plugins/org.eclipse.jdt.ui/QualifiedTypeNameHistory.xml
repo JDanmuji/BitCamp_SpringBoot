@@ -51,4 +51,5 @@
     <fullyQualifiedTypeName name="org.hibernate.annotations.DynamicUpdate"/>
     <fullyQualifiedTypeName name="jakarta.transaction.Transactional"/>
     <fullyQualifiedTypeName name="user.bean.UserDTO"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
 </qualifiedTypeNameHistroy>
